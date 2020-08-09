@@ -1,0 +1,212 @@
+@lt-gray: #ddd;
+@background-dark: #512DA8;
+@background-light: #9575CD;
+@background-pale: #D1C4E9;
+
+@carousel-item-height: 300px;
+
+.zero-margin (@pad-up-dn: 0px, @pad-left-right: 0px) {
+	margin:0px auto;
+	padding: @pad-up-dn @pad-left-right;
+}
+
+.row-header {
+    margin: 0px auto;
+     }
+  
+  .row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px; }
+  
+  .footer {
+    background-color: #6af06a62;
+    margin: 0px auto;
+    padding: 20px 0px; }
+  
+  .jumbotron {
+    margin: 0px auto;
+    color: floralwhite; 
+    border: 5px dotted rgb(240, 236, 27);
+    padding: 0px;
+    background: rgba(0, 14, 9, 0.973);
+  }
+  
+  address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f; }
+  
+  body {
+    background: #046780b2;
+    padding: 50px 0px 0px 0px;
+    z-index: 0; }
+  
+  .navbar-dark {
+    background-color: #800808; }
+  
+  .tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px; }
+  
+    .modal-body{
+      max-height: 900px;
+      overflow-y: auto;
+      background: darkslategrey;
+    
+    }
+  
+  .carousel {
+    background: #0e0c14; }
+    .carousel .carousel-item {
+      height: 300px; }
+      .carousel .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 300px; }
+  
+  #carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1; }
+    
+    .carousel-caption {
+      position: relative;
+      bottom: 10px;
+      right: 0;
+      font-size: 100%;
+      color: rgb(230, 36, 36);
+    }
+  
+    .modal-header{
+      background: green;
+  
+    }
+  
+  .container {
+    position: relative;
+      
+  }
+    
+  
+  .text-block {
+    position: absolute;
+    bottom: 180px;
+    right: 25px;
+    color: rgb(7, 7, 17);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  
+  .logo1{
+    position: absolute;
+    right: 300px;
+    width: 170px;
+    height: 120px;
+    
+  }
+  
+  
+  .column {
+    width: 1200px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+  
+  
+  
+  .column .box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin:5px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  
+  .column .box .imgBox{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .column .box .imgBox img{
+    max-width: 100%;
+    transition: transform 2s;
+  }
+  
+  .column .box:hover .imgBox img
+  {
+    transform: scale(1.2);
+  }
+  .column .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+  }
+  
+  .column .box:hover .details{
+    transform: scaleY(1);
+  
+  }
+  
+  .column .box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+  }
+  
+  .column .box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ff0;
+  }
+  
+  .column .box .details .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    
+  }
+  
+  .glow {
+    font-size: 30px;
+    color: rgb(19, 73, 223);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  .glow1 {
+    font-size: 50px;
+    color: rgba(132, 134, 15, 0.932);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
